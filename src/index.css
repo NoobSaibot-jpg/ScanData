@@ -7,6 +7,7 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -41,4 +42,22 @@ body {
   text-shadow: 4px 4px 8px rgba(0,0,0,0.15);
 }
 
+@keyframes wave {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-25%); }
+  100% { transform: translateX(0); }
+}
 
+@keyframes wave-reverse {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(25%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-wave {
+  animation: wave 60s linear infinite;
+}
+
+.animate-wave-reverse {
+  animation: wave-reverse 65s linear infinite;
+}

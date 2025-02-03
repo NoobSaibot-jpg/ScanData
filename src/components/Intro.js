@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../images/Web-developer.svg';
+import img from '../images/rectangle.jpg';
 import { Link } from 'react-router-dom';
 
 const Intro = () => {
@@ -8,12 +8,13 @@ const Intro = () => {
             <div className="m-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-24">
                     {/* Image Section */}
-                    <div className="lg:w-1/2 relative group" data-aos="fade-right">
+                    <div className="lg:w-1/2 relative group h-[600px] lg:h-[800px]" data-aos="fade-right">
                         <div className="absolute -inset-2 bg-gradient-to-r from-customGreen/20 to-blue-200/50 rounded-3xl transform rotate-1 group-hover:rotate-0 transition duration-500"></div>
                         <img 
                             alt="Web Developer" 
-                            className="relative rounded-3xl shadow-2xl transform group-hover:scale-105 transition duration-500" 
+                            className="relative w-full h-full rounded-3xl shadow-2xl transform group-hover:scale-105 transition duration-500 object-cover object-center" 
                             src={img} 
+                            loading="lazy"
                         />
                     </div>
 
@@ -32,7 +33,7 @@ const Intro = () => {
                             </p>
 
                             <div className="bg-white p-6 rounded-xl shadow-lg">
-                                <h4 className="text-xl font-semibold text-gray-800 mb-3">Наші послуги:</h4>
+                                <h4 className="text-xl font-semibold text-gray-800 mb-3">Як і раніше, ми надаємо послуги:</h4>
                                 <ul className="space-y-3">
                                     <li className="flex items-center">
                                         <svg className="w-5 h-5 text-customGreen mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -50,8 +51,7 @@ const Intro = () => {
                             </div>
 
                             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
-                                З 2010 року ми є провідною архівною компанією з повним циклом послуг. 
-                                Всі кошти залишаються в Україні та спрямовуються на розвиток економіки.
+                            Протягом останніх тринадцяти років Українська Архівна Компанія є чи не єдиною у державі з виключно українським керівництвом, бенефіціарами, співробітниками та головним офісом. Ми – провідна організація, що забезпечує архівне зберігання документів та виконує весь комплекс архівних послуг.
                             </p>
                         </div>
 

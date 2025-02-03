@@ -5,41 +5,28 @@ const NavLinks = ({ linkStyle, activeStyle, onClick }) => {
     return (
         <>
             <HashLink 
-                className={`${linkStyle}`}
                 smooth 
-                to="/#about"
+                to="/#about" 
+                className={linkStyle}
+                activeClassName={activeStyle}
                 onClick={onClick}
             >
                 Про нас
             </HashLink>
             <HashLink 
-                className={`${linkStyle}`}
                 smooth 
-                to="/#services"
-                onClick={onClick}
-            >
-                Послуги
-            </HashLink>
-            <HashLink 
-                className={`${linkStyle}`}
-                smooth 
-                to="/#clients"
-                onClick={onClick}
-            >
-                Клієнти
-            </HashLink>
-            <HashLink 
-                className={`${linkStyle}`}
-                smooth 
-                to="/contact#contact"
+                to="/#contact" 
+                className={linkStyle}
+                activeClassName={activeStyle}
                 onClick={onClick}
             >
                 Контакти
             </HashLink>
             <HashLink 
-                className={`${linkStyle}`}
                 smooth 
-                to="/get-demo#demo"
+                to="/#news" 
+                className={linkStyle}
+                activeClassName={activeStyle}
                 onClick={onClick}
             >
                 Новини

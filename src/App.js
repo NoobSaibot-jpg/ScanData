@@ -10,10 +10,10 @@ import {
 // All pages
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import DemoProduct from './pages/DemoProduct';
 
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
+import ServicePage from './pages/ServicePage';
 
 function App() {
   useEffect(() => {
@@ -39,7 +39,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/get-demo" element={<DemoProduct />} /> 
+            <Route path="/get-demo" element={<ServicePage />} /> 
           </Routes>
         </ScrollToTop>
       </Router>

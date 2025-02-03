@@ -5,6 +5,54 @@ import { HashLink } from 'react-router-hash-link';
 const Footer = () => {
     return (
         <footer className="relative bg-gradient-to-b from-gray-50 to-blue-50 border-t border-gray-200/50">
+
+            {/* Анимированные волны */}
+            {/* Анимированные волны */}
+            {/* <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-screen h-40 z-0"> */}
+                {/* Первый слой волн */}
+                {/* <svg 
+                    viewBox="0 0 1440 320" 
+                    className="absolute bottom-0 w-full h-full animate-wave"
+                    style={{ 
+                        opacity: 0.2,
+                        animationDelay: '0.5s'
+                    }}
+                >
+                    <path 
+                        fill="url(#waveGradient1)"
+                        d="M0,160L48,149.3C96,139,192,117,288,128C384,139,480,181,576,170.7C672,160,768,96,864,90.7C960,85,1056,139,1152,165.3C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                    />
+                    <defs>
+                        <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stopColor="#2A9D8F" />
+                            <stop offset="100%" stopColor="#013289" />
+                        </linearGradient>
+                    </defs>
+                </svg> */}
+
+                {/* Второй слой волн */}
+                {/* <svg 
+                    viewBox="0 0 1440 240" 
+                    className="absolute bottom-0 w-full h-full animate-wave-reverse"
+                    style={{ 
+                        opacity: 0.15,
+                        animationDelay: '0s'
+                    }}
+                >
+                    <path 
+                        fill="url(#waveGradient2)"
+                        d="M0,128L60,112C120,96,240,64,360,58.7C480,53,600,75,720,101.3C840,128,960,160,1080,154.7C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+                    />
+                    <defs>
+                        <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stopColor="#013289" />
+                            <stop offset="100%" stopColor="#2A9D8F" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div> */}
+
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
                     {/* 1st block - Address */}
@@ -106,10 +154,32 @@ const Footer = () => {
                 {/* Copyright */}
                 <div className="mt-12 pt-8 border-t border-gray-200/50 text-center">
                     <p className="text-gray-600">
-                        © {new Date().getFullYear()} Українська Архівна Компанія. Всі права захщені .
+                        © {new Date().getFullYear()} Українська Архівна Компанія. Всі права захищені .
                     </p>
                 </div>
             </div>
+
+             {/* Дополнительная волна */}
+            {/* <div className="absolute bottom-5 left-0 w-full overflow-hidden">
+                <svg 
+                    viewBox="0 0 1440 120" 
+                    className="relative block"
+                >
+                    <path 
+                        fill="url(#waveGradient2)"
+                        fillOpacity="0.15" 
+                        d="M0,64L60,85.3C120,107,240,149,360,149.3C480,149,600,107,720,112C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+                    >
+                    </path>
+                    <defs>
+                        <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stopColor="#013289" />
+                            <stop offset="100%" stopColor="#2A9D8F" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div> */}
+
         </footer>
     );
 };
