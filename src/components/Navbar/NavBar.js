@@ -11,10 +11,10 @@ const NavBar = () => {
     const servicesMenuRef = useRef(null);
 
     const servicesItems = [
-        { text: 'Сканування', anchor: '/scanning' },
-        { text: 'Введення даних', anchor: '/data-entry' },
-        { text: 'Аутсорсинг процесів', anchor: '/outsourcing' },
-        { text: 'Електронний архів', anchor: '/e-archive' }
+        { text: 'Сканування', anchor: '#' },
+        { text: 'Введення даних', anchor: '#' },
+        { text: 'Аутсорсинг процесів', anchor: '#' },
+        { text: 'Електронний архів', anchor: '#' }
     ];
 
     const handleMenuToggle = (e) => {
@@ -57,7 +57,7 @@ const NavBar = () => {
             
             <HashLink 
                 smooth 
-                to="/news" 
+                to="#" 
                 className={mobile ? 
                     "block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-xl text-xl font-medium transition-colors duration-300" : 
                     "text-gray-600 hover:text-customGreen transition-colors duration-300 font-medium text-lg"
@@ -68,7 +68,7 @@ const NavBar = () => {
             
             <HashLink 
                 smooth 
-                to="/#contact" 
+                to="/contact#contact" 
                 className={mobile ? 
                     "block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-xl text-xl font-medium transition-colors duration-300" : 
                     "text-gray-600 hover:text-customGreen transition-colors duration-300 font-medium text-lg"
