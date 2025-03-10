@@ -4,182 +4,142 @@ import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
     return (
-        <footer className="relative bg-gradient-to-b from-gray-50 to-blue-50 border-t border-gray-200/50">
-
-            {/* Анимированные волны */}
-            {/* Анимированные волны */}
-            {/* <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-screen h-40 z-0"> */}
-                {/* Первый слой волн */}
-                {/* <svg 
-                    viewBox="0 0 1440 320" 
-                    className="absolute bottom-0 w-full h-full animate-wave"
-                    style={{ 
-                        opacity: 0.2,
-                        animationDelay: '0.5s'
-                    }}
-                >
-                    <path 
-                        fill="url(#waveGradient1)"
-                        d="M0,160L48,149.3C96,139,192,117,288,128C384,139,480,181,576,170.7C672,160,768,96,864,90.7C960,85,1056,139,1152,165.3C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-                    />
-                    <defs>
-                        <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stopColor="#2A9D8F" />
-                            <stop offset="100%" stopColor="#013289" />
-                        </linearGradient>
-                    </defs>
-                </svg> */}
-
-                {/* Второй слой волн */}
-                {/* <svg 
-                    viewBox="0 0 1440 240" 
-                    className="absolute bottom-0 w-full h-full animate-wave-reverse"
-                    style={{ 
-                        opacity: 0.15,
-                        animationDelay: '0s'
-                    }}
-                >
-                    <path 
-                        fill="url(#waveGradient2)"
-                        d="M0,128L60,112C120,96,240,64,360,58.7C480,53,600,75,720,101.3C840,128,960,160,1080,154.7C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-                    />
-                    <defs>
-                        <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stopColor="#013289" />
-                            <stop offset="100%" stopColor="#2A9D8F" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div> */}
-
-
+        <footer className="bg-gray-900 text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-                    {/* 1st block - Address */}
-                    {/* <div className="lg:col-span-2 space-y-6">
-                        <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-100">
-                            <h3 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-customGreen to-blue-600 mb-4">
-                                ScanData
-                            </h3>
-                            <div className="space-y-2 text-gray-600"> */}
-                                {/* <p className="font-medium">Molad e Konsult</p> */}
-                                {/* <p>Ilo Awela,</p>
-                                <p>Ota,</p>
-                                <p>Ogun State.</p>
-                            </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {/* О компании */}
+                    <div>
+                        <h3 className="text-lg font-semibold mb-4">Про нас</h3>
+                        <p className="text-gray-400 mb-4">
+                            Ми – провідна організація, що забезпечує повний комплекс архівних послуг та обробки документів.
+                        </p>
+                        <div className="flex space-x-4">
+                            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                                </svg>
+                            </a>
                         </div>
-                    </div> */}
+                    </div>
 
-                    {/* 2nd block - Links */}
-                    <div className="space-y-4">
-                        <h6 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-customGreen to-blue-600">
-                            Навігація
-                        </h6>
-                        <ul className="space-y-3">
-                            {[
-                                { text: 'Про нас', anchor: '/#about' },
-                                { text: 'Послуги', anchor: '/#services' },
-                                { text: 'Контакти', anchor: '/contact#contact' }
-                            ].map((link, index) => (
-                                <li key={index}>
-                                <HashLink
-                                    to={link.anchor}
-                                    smooth
-                                    className="text-gray-600 hover:text-customGreen transition-colors duration-300"
-                                >
-                                    {link.text}
-                                </HashLink>
-                                </li>
-                            ))}
+                    {/* Навигация */}
+                    <div>
+                        <h3 className="text-lg font-semibold mb-4">Навігація</h3>
+                        <ul className="space-y-2">
+                            <li>
+                                <Link to="/" className="text-gray-400 hover:text-white transition-colors">
+                                    Головна
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/#about" className="text-gray-400 hover:text-white transition-colors">
+                                    Про нас
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/#services" className="text-gray-400 hover:text-white transition-colors">
+                                    Послуги
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/#projects" className="text-gray-400 hover:text-white transition-colors">
+                                    Проекти
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
+                                    Контакти
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
-                    {/* 3rd block - Services */}
-                    <div className="space-y-4">
-                        <h6 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-customGreen to-blue-600">
-                            Послуги
-                        </h6>
-                        <ul className="space-y-3">
-                            {[
-                                'Сканування',
-                                'Введення даних',
-                                'Аутсорсинг процесів',
-                                'Електронний архів'
-                            ].map((service, index) => (
-                                <li key={index}>
-                                    <Link
-                                        to="#"
-                                        className="text-gray-600 hover:text-customGreen transition-colors duration-300"
-                                    >
-                                        {service}
-                                    </Link>
-                                </li>
-                            ))}
+                    {/* Услуги */}
+                    <div>
+                        <h3 className="text-lg font-semibold mb-4">Послуги</h3>
+                        <ul className="space-y-2">
+                            <li>
+                                <Link to="/services/scanning" className="text-gray-400 hover:text-white transition-colors">
+                                    Сканування документів
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/services/indexing" className="text-gray-400 hover:text-white transition-colors">
+                                    Індексування
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/services/databases" className="text-gray-400 hover:text-white transition-colors">
+                                    Бази даних
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/services/archive" className="text-gray-400 hover:text-white transition-colors">
+                                    Електронний архів
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/services/data-entry" className="text-gray-400 hover:text-white transition-colors">
+                                    Введення даних
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
-                    {/* 4th block - Social */}
-                    <div className="space-y-6">
-                        <div className="space-y-4">
-                            <h6 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-customGreen to-blue-600">
-                                Соціальні мережі
-                            </h6>
-                            <div className="flex space-x-4">
-                                {[
-                                    {
-                                        icon: 'M24 11.5c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 2.9 2.6 3.2-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H8c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4c.7-.5 1.3-1.1 1.7-1.8z',
-                                        label: 'linkedin'
-                                    }
-                                ].map((social, index) => (
-                                    <a
-                                        href="https://www.linkedin.com/company/2671335?trk=NUS_CMPY_TWIT"
-                                        className="p-2 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                                        aria-label="LinkedIn"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <svg
-                                            className="w-6 h-6 fill-current text-gray-600 hover:text-customGreen transition-colors duration-300"
-                                            viewBox="0 0 32 32"
-                                        >
-                                            <path d="M26.37 26.36h-4.52v-7.1c0-1.7-.03-3.88-2.36-3.88-2.36 0-2.72 1.84-2.72 3.75v7.23h-4.53V12.5h4.35v1.99h.06c.6-1.15 2.08-2.36 4.3-2.36 4.6 0 5.45 3.03 5.45 6.97v8.26zM8.1 10.4a2.6 2.6 0 11-.02-5.2 2.6 2.6 0 01.02 5.2zM10.6 26.36H5.6V12.5h5v13.86z"/>
-                                        </svg>
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
+                    {/* Контакты */}
+                    <div>
+                        <h3 className="text-lg font-semibold mb-4">Контакти</h3>
+                        <ul className="space-y-2 text-gray-400">
+                            <li className="flex items-center">
+                                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                м. Київ, вул. Прикладна, 1
+                            </li>
+                            <li className="flex items-center">
+                                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                +380 (44) 123-45-67
+                            </li>
+                            <li className="flex items-center">
+                                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                info@scandata.ua
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                {/* Copyright */}
-                <div className="mt-12 pt-8 border-t border-gray-200/50 text-center">
-                    <p className="text-gray-600">
-                        © {new Date().getFullYear()} Українська Архівна Компанія. Всі права захищені .
-                    </p>
+                {/* Нижняя часть футера */}
+                <div className="mt-12 pt-8 border-t border-gray-800">
+                    <div className="flex flex-col md:flex-row justify-between items-center">
+                        <p className="text-gray-400 text-sm">
+                            © {new Date().getFullYear()} ScanData. Всі права захищено.
+                        </p>
+                        <div className="flex space-x-6 mt-4 md:mt-0">
+                            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+                                Політика конфіденційності
+                            </a>
+                            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+                                Умови використання
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-             {/* Дополнительная волна */}
-            {/* <div className="absolute bottom-5 left-0 w-full overflow-hidden">
-                <svg 
-                    viewBox="0 0 1440 120" 
-                    className="relative block"
-                >
-                    <path 
-                        fill="url(#waveGradient2)"
-                        fillOpacity="0.15" 
-                        d="M0,64L60,85.3C120,107,240,149,360,149.3C480,149,600,107,720,112C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-                    >
-                    </path>
-                    <defs>
-                        <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stopColor="#013289" />
-                            <stop offset="100%" stopColor="#2A9D8F" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div> */}
-
         </footer>
     );
 };

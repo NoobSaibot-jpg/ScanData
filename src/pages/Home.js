@@ -6,16 +6,22 @@ import Hero from '../components/Hero';
 import Intro from '../components/Intro';
 // import Portfolio from '../components/Portfolio';
 import Services from '../components/Services';
+import Projects from '../components/Projects';
+import Materials from '../components/Materials';
+import News from '../components/News';
 
 
 const Home = () => {
     return (
         <>
             <Hero />
-            <Intro />
             <Services />
-            {/* <Portfolio /> */}
             <Clients />
+            <Projects />
+            <Materials />
+            <News />
+            {/* <Intro /> */}
+            {/* <Portfolio /> */}
             {/* <Cta/> */}
             <Footer />
         </>
