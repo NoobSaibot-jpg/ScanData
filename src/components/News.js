@@ -1,26 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import newsData from '../data/news.json';
 
 const News = () => {
-    const news = [
-        {
-            title: "Державна казначейська служба України",
-            date: "02.05.2024",
-            description: "24.04.2024 – З Українською Архівною Компанією за результатами відкритих торгів з особливостями на електронному майданчику SmartTender укладено Договір, як з переможцем, на виконання послуг – послуги з науково-технічного опрацювання та архівування документів...",
-            image: "https://storage.googleapis.com/svoi-upload/137/90298/64477d6fa219e__2018-11-14-101425.008507DKSU.jpg"
-        },
-        {
-            title: 'Державна установа "Національний інститут фтизіатрії і пульмонології ім. Ф.Г. Яновського Національної академії медичних наук України"',
-            date: "02.05.2024",
-            description: "11.03.2024 – З Українською Архівною Компанією за результатами відкритих торгів з особливостями на електронному майданчику SmartTender укладено Договір, як з переможцем, на виконання послуг – послуги з науково-технічного опрацювання та архівування документів (деталізований код послуги за дк 021:2015 – 92510000-9 ПОСЛУГИ БІБЛІОТЕК І АРХІВІВ) (номер у Prozorro UA-2024-02-23-010706-a)...",
-            image: "https://www.stoptb.org.ua/wp-content/uploads/2023/05/1-1.jpg"
-        },
-        {
-            title: "СП «КИЇВСЬКІ ТЕЦ», СП «ЗАВОД «ЕНЕРГІЯ», СП «ЕНЕРГОЗБУТ» КП «КИЇВТЕПЛОЕНЕРГО»",
-            date: "02.05.2024",
-            description: "21.03.2024 – З Українською Архівною Компанією за результатами відкритих торгів з особливостями на майданчику SmartTender укладено Договори зі структурними підрозділами, як з переможцем..",
-            image: "https://kte.kmda.gov.ua/wp-content/uploads/2021/06/DJI_0152_edit.jpg?x91075"
-        }
-    ];
+    const { news } = newsData;
 
     return (
         <section className="py-16 bg-gray-50" id="news">
@@ -40,32 +23,48 @@ const News = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {news.map((item, index) => (
-                        <div 
+                        <Link 
+                            to={`/news/${item.id}`}
                             key={index}
-                            className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                            className="group h-full"
                             data-aos="fade-up"
                             data-aos-delay={100 * (index + 1)}
                         >
-                            <div className="aspect-w-16 aspect-h-9">
-                                <img 
-                                    src={item.image} 
-                                    alt={item.title}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                            <div className="p-6">
-                                <div className="text-sm text-customGreen font-medium mb-2">
-                                    {item.date}
+                            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                                <div className="aspect-w-16 aspect-h-9">
+                                    <img 
+                                        src={item.image} 
+                                        alt={item.title}
+                                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                                    />
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                                    {item.title}
-                                </h3>
-                                <p className="text-gray-600">
-                                    {item.description}
-                                </p>
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <div className="text-sm text-customGreen font-medium mb-2">
+                                        {item.date}
+                                    </div>
+                                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-customGreen transition-colors duration-300 line-clamp-2">
+                                        {item.title}
+                                    </h3>
+                                    <p className="text-gray-600 line-clamp-3 flex-grow">
+                                        {item.description}
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
+                </div>
+                <div className="text-center mt-12">
+                    <Link 
+                        to="/news"
+                        className="inline-flex items-center text-customGreen hover:text-customGreen/80 transition-colors duration-300"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                    >
+                        <span>Всі новини</span>
+                        <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </Link>
                 </div>
             </div>
         </section>

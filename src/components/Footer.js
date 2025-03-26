@@ -42,18 +42,23 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/#about" className="text-gray-400 hover:text-white transition-colors">
+                                <Link to="/about" className="text-gray-400 hover:text-white transition-colors">
                                     Про нас
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/#services" className="text-gray-400 hover:text-white transition-colors">
+                                <Link to="/services/scanning" className="text-gray-400 hover:text-white transition-colors">
                                     Послуги
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/#projects" className="text-gray-400 hover:text-white transition-colors">
+                                <Link to="/projects" className="text-gray-400 hover:text-white transition-colors">
                                     Проекти
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/news" className="text-gray-400 hover:text-white transition-colors">
+                                    Новини
                                 </Link>
                             </li>
                             <li>
@@ -93,6 +98,11 @@ const Footer = () => {
                                     Введення даних
                                 </Link>
                             </li>
+                            <li>
+                                <Link to="/services/loyalty" className="text-gray-400 hover:text-white transition-colors">
+                                    Обробка програм лояльності
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
@@ -130,12 +140,12 @@ const Footer = () => {
                             © {new Date().getFullYear()} ScanData. Всі права захищено.
                         </p>
                         <div className="flex space-x-6 mt-4 md:mt-0">
-                            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+                            <Link to="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors">
                                 Політика конфіденційності
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+                            </Link>
+                            <Link to="/terms-of-use" className="text-gray-400 hover:text-white text-sm transition-colors">
                                 Умови використання
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -84,7 +84,7 @@ const NavBar = () => {
             </Link>
             <HashLink 
                 smooth 
-                to="/#projects" 
+                to="/projects" 
                 className={mobile ? 
                     "block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-xl text-xl font-medium transition-colors duration-300" : 
                     `transition-colors duration-300 font-medium text-lg ${isScrolled ? 'text-gray-600 hover:text-customGreen' : 'text-white hover:text-customGreen'}`
@@ -93,16 +93,15 @@ const NavBar = () => {
                 Реалізовані проекти
             </HashLink>
             
-            <HashLink 
-                smooth 
-                to="/#news" 
+            <Link 
+                to="/news" 
                 className={mobile ? 
                     "block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-xl text-xl font-medium transition-colors duration-300" : 
                     `transition-colors duration-300 font-medium text-lg ${isScrolled ? 'text-gray-600 hover:text-customGreen' : 'text-white hover:text-customGreen'}`
                 }
             >
                 Новини
-            </HashLink>
+            </Link>
             <HashLink 
                 smooth 
                 to="/#materials" 
@@ -212,13 +211,13 @@ const NavBar = () => {
                                     onMouseLeave={handleServicesMouseLeave}
                                 >
                                     {servicesItems.map((item, index) => (
-                                        <HashLink
+                                        <Link
                                             key={index}
                                             to={item.anchor}
                                             className="block px-6 py-4 text-gray-700 hover:bg-customGreen/10 hover:text-customGreen transition-colors duration-300"
                                         >
                                             {item.text}
-                                        </HashLink>
+                                        </Link>
                                     ))}
                                 </div>
                             </div>
@@ -291,7 +290,7 @@ const NavBar = () => {
                                 </button>
                                 <div className={`overflow-hidden transition-all duration-300 ${servicesMobileOpen ? 'max-h-[500px]' : 'max-h-0'}`}>
                                     {servicesItems.map((item, index) => (
-                                        <HashLink
+                                        <Link
                                             key={index}
                                             to={item.anchor}
                                             className="block px-4 py-3 text-gray-700 hover:bg-customGreen/10 hover:text-customGreen rounded-xl text-lg font-medium transition-colors duration-300 ml-4"
@@ -301,7 +300,7 @@ const NavBar = () => {
                                             }}
                                         >
                                             {item.text}
-                                        </HashLink>
+                                        </Link>
                                     ))}
                                 </div>
                             </div>
