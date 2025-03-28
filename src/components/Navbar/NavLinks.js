@@ -24,7 +24,7 @@ const NavLinks = ({ linkStyle, activeStyle, onClick }) => {
             </HashLink>
             <HashLink 
                 smooth 
-                to="/#news" 
+                to="/news" 
                 className={linkStyle}
                 activeClassName={activeStyle}
                 onClick={onClick}

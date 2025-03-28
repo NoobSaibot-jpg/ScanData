@@ -95,7 +95,7 @@ const NavBar = () => {
             
             <HashLink 
                 smooth 
-                to="/#news" 
+                to="/news" 
                 className={mobile ? 
                     "block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-xl text-xl font-medium transition-colors duration-300" : 
                     `transition-colors duration-300 font-medium text-lg ${isScrolled ? 'text-gray-600 hover:text-customGreen' : 'text-white hover:text-customGreen'}`

@@ -9,11 +9,14 @@ import Services from '../components/Services';
 import Projects from '../components/Projects';
 import Materials from '../components/Materials';
 import News from '../components/News';
+import NavBar from '../components/Navbar/NavBar';
+import CookieConsent from '../components/CookieConsent';
 
 
 const Home = () => {
     return (
         <>
+            <NavBar />
             <Hero />
             <Services />
             <Clients />
@@ -24,6 +27,7 @@ const Home = () => {
             {/* <Portfolio /> */}
             {/* <Cta/> */}
             <Footer />
+            <CookieConsent />
         </>
 
     )
