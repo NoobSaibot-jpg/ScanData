@@ -8,7 +8,7 @@ import aboutImg from '../images/photo/about.jpg';
 
 const NewsDetail = () => {
     const { id } = useParams();
-    const news = newsData.news.find(item => item.id === id);
+    const news = newsData.news.find(item => item.id === parseInt(id));
 
     if (!news) {
         return (
@@ -94,7 +94,7 @@ const NewsDetail = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                     <div className="bg-white rounded-2xl p-8 shadow-lg">
                         <div className="prose prose-lg max-w-none">
-                            <div dangerouslySetInnerHTML={{ __html: news.content }} />
+                            <div dangerouslySetInnerHTML={{ __html: news.fullText }} />
                         </div>
                     </div>
                 </div>

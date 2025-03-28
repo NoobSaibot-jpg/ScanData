@@ -5,7 +5,7 @@
             "title": "Сканування та індексація архіву банку",
             "client": "Банк",
             "description": "Комплексний проект з оцифрування та індексації архіву документів банку. Включає сканування, створення електронного архіву та налаштування системи пошуку.",
-            "image": "/images/photo/projects/bank-archive.jpg",
+            "image": "images/photo/2 Индексирование.JPG",
             "features": [
                 "Сканування документів різних форматів",
                 "Створення структури електронного архіву",
@@ -20,9 +20,9 @@
                 "Забезпечено безпечне зберігання"
             ],
             "gallery": [
-                "/images/photo/projects/bank-archive-1.jpg",
-                "/images/photo/projects/bank-archive-2.jpg",
-                "/images/photo/projects/bank-archive-3.jpg"
+                "images/photo/2 Индексирование.JPG",
+                "images/photo/3 Базы.JPG",
+                "images/photo/4 электронный архив.JPG"
             ]
         },
         {
@@ -30,7 +30,7 @@
             "title": "Створення електронного архіву для страхової компанії",
             "client": "Страхова компанія",
             "description": "Розробка та впровадження системи електронного архівування для страхової компанії. Включає міграцію даних та налаштування системи управління документами.",
-            "image": "/images/photo/projects/insurance-archive.jpg",
+            "image": "images/photo/4 электронный архив.JPG",
             "features": [
                 "Міграція даних з паперових носіїв",
                 "Розробка системи класифікації",
@@ -45,9 +45,9 @@
                 "Покращено ефективність роботи"
             ],
             "gallery": [
-                "/images/photo/projects/insurance-archive-1.jpg",
-                "/images/photo/projects/insurance-archive-2.jpg",
-                "/images/photo/projects/insurance-archive-3.jpg"
+                "images/photo/4 электронный архив.JPG",
+                "images/photo/5 Ввод даних.JPG",
+                "images/photo/6 Обробка програм лояльності.png"
             ]
         }
     ]

@@ -217,25 +217,78 @@ const About = () => {
                                     href="https://www.uac-archive.com.ua" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="flex items-center justify-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300 hover:bg-customGreen/10 group"
+                                    className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-customGreen/5 to-blue-50 p-6 hover:shadow-lg transition-all duration-300"
+                                    data-aos="fade-up"
+                                    data-aos-delay="100"
                                 >
-                                    <span className="text-lg font-medium text-gray-700 group-hover:text-customGreen">www.uac-archive.com.ua</span>
+                                    <div className="absolute inset-0 bg-gradient-to-br from-customGreen/10 to-blue-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    <div className="relative">
+                                        <div className="flex items-center mb-4">
+                                            <div className="w-12 h-12 bg-customGreen/10 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                                                <svg className="w-6 h-6 text-customGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                                </svg>
+                                            </div>
+                                            <h3 className="text-lg font-semibold text-gray-900 group-hover:text-customGreen transition-colors duration-300">
+                                                www.uac-archive.com.ua
+                                            </h3>
+                                        </div>
+                                        <p className="text-gray-600 text-sm">
+                                            Офіційний сайт Української Архівної Компанії
+                                        </p>
+                                    </div>
                                 </a>
+
                                 <a 
                                     href="https://www.hranenie.com.ua" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="flex items-center justify-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300 hover:bg-customGreen/10 group"
+                                    className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-customGreen/5 to-blue-50 p-6 hover:shadow-lg transition-all duration-300"
+                                    data-aos="fade-up"
+                                    data-aos-delay="200"
                                 >
-                                    <span className="text-lg font-medium text-gray-700 group-hover:text-customGreen">www.hranenie.com.ua</span>
+                                    <div className="absolute inset-0 bg-gradient-to-br from-customGreen/10 to-blue-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    <div className="relative">
+                                        <div className="flex items-center mb-4">
+                                            <div className="w-12 h-12 bg-customGreen/10 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                                                <svg className="w-6 h-6 text-customGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                                                </svg>
+                                            </div>
+                                            <h3 className="text-lg font-semibold text-gray-900 group-hover:text-customGreen transition-colors duration-300">
+                                                www.hranenie.com.ua
+                                            </h3>
+                                        </div>
+                                        <p className="text-gray-600 text-sm">
+                                            Сайт про зберігання документів
+                                        </p>
+                                    </div>
                                 </a>
+
                                 <a 
                                     href="https://www.spisanie.com.ua" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="flex items-center justify-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300 hover:bg-customGreen/10 group"
+                                    className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-customGreen/5 to-blue-50 p-6 hover:shadow-lg transition-all duration-300"
+                                    data-aos="fade-up"
+                                    data-aos-delay="300"
                                 >
-                                    <span className="text-lg font-medium text-gray-700 group-hover:text-customGreen">www.spisanie.com.ua</span>
+                                    <div className="absolute inset-0 bg-gradient-to-br from-customGreen/10 to-blue-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    <div className="relative">
+                                        <div className="flex items-center mb-4">
+                                            <div className="w-12 h-12 bg-customGreen/10 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                                                <svg className="w-6 h-6 text-customGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                                </svg>
+                                            </div>
+                                            <h3 className="text-lg font-semibold text-gray-900 group-hover:text-customGreen transition-colors duration-300">
+                                                www.spisanie.com.ua
+                                            </h3>
+                                        </div>
+                                        <p className="text-gray-600 text-sm">
+                                            Сайт про списання документів
+                                        </p>
+                                    </div>
                                 </a>
                             </div>
                         </div>

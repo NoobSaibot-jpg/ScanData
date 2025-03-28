@@ -4,6 +4,7 @@ import NavBar from '../components/Navbar/NavBar';
 import Footer from '../components/Footer';
 import shadowImg from '../images/frame-2-1.png';
 import projectsData from '../data/projects.json';
+import { getProjectImage } from '../data/projectImages';
 
 const ProjectPage = () => {
     const { id } = useParams();
@@ -33,7 +34,7 @@ const ProjectPage = () => {
                 {/* Основное изображение с эффектами */}
                 <div className="absolute inset-0">
                     <img 
-                        src={project.image} 
+                        src={getProjectImage(project.image)} 
                         alt={project.title}
                         className="absolute inset-0 w-full h-full object-cover transform transition duration-500"
                     />
@@ -151,13 +152,20 @@ const ProjectPage = () => {
                                     {project.gallery.map((image, index) => (
                                         <div 
                                             key={index}
-                                            className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden"
+                                            className="group relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden"
                                         >
                                             <img 
-                                                src={image} 
+                                                src={getProjectImage(image)} 
                                                 alt={`${project.title} - фото ${index + 1}`}
-                                                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                                                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                                             />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                                <div className="p-4 text-white">
+                                                    <p className="text-sm font-medium">
+                                                        {project.title} - фото {index + 1}
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                     ))}
                                 </div>

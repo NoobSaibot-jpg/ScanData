@@ -26,50 +26,47 @@ import NewsPage from './pages/NewsPage';
 import NewsDetail from './pages/NewsDetail';
 import ProjectsPage from './pages/ProjectsPage';
 import ProjectPage from './pages/ProjectPage';
+import MaterialsPage from './pages/MaterialsPage';
+import ServicesPage from './pages/ServicesPage';
 
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
-  useEffect(() => {
-    const aos_init = () => {
-      AOS.init({
-        once: true,
-        duration: 1000,
-        easing: 'ease-out-cubic',
-      });
-    }
+  useDocTitle("Скандата - Сканування документів");
 
-    window.addEventListener('load', () => {
-      aos_init();
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false,
     });
   }, []);
 
-  useDocTitle("ScanData - Професійні послуги з обробки документів");
-
   return (
-    <>
-      <Router>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-of-use" element={<TermsOfUse />} />
-          <Route path="/news" element={<NewsPage />} />
-          <Route path="/news/:id" element={<NewsDetail />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/projects/:id" element={<ProjectPage />} />
-          <Route path="/services/scanning" element={<ScanningService />} />
-          <Route path="/services/indexing" element={<IndexingService />} />
-          <Route path="/services/databases" element={<DatabaseService />} />
-          <Route path="/services/archive" element={<ArchiveService />} />
-          <Route path="/services/data-entry" element={<DataEntryService />} />
-          <Route path="/services/loyalty" element={<LoyaltyService />} />
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-use" element={<TermsOfUse />} />
+        <Route path="/news" element={<NewsPage />} />
+        <Route path="/news/:id" element={<NewsDetail />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/:id" element={<ProjectPage />} />
+        <Route path="/materials" element={<MaterialsPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/services/scanning" element={<ScanningService />} />
+        <Route path="/services/indexing" element={<IndexingService />} />
+        <Route path="/services/databases" element={<DatabaseService />} />
+        <Route path="/services/archive" element={<ArchiveService />} />
+        <Route path="/services/data-entry" element={<DataEntryService />} />
+        <Route path="/services/loyalty" element={<LoyaltyService />} />
+      </Routes>
+    </Router>
   );
 }
 

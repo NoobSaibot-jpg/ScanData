@@ -4,20 +4,34 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 // Импорт изображений
-import f from "../images/clients/1.jpg";
+import f from "../images/clients/1.png";
 import s from "../images/clients/2.jpg";
 import t from "../images/clients/3.jpg";
-import fo from "../images/clients/4.jpg";
-import fi from "../images/clients/5.jpg";
-import si from "../images/clients/6.jpg";
+import fo from "../images/clients/4.png";
+import fi from "../images/clients/5.png";
+import si from "../images/clients/6.png";
 import se from "../images/clients/7.jpg";
-import e from "../images/clients/8.jpg";
-import n from "../images/clients/9.jpg";
-import ten from "../images/clients/10.jpg";
+import e from "../images/clients/8.png";
+import n from "../images/clients/9.png";
+import ten from "../images/clients/10.png";
 import el from "../images/clients/11.jpg";
-import tw from "../images/clients/12.jpg";
+import tw from "../images/clients/12.png";
+import tt from "../images/clients/13.png"
+import ft from "../images/clients/14.png"
+import fit from "../images/clients/15.png"
+import st from "../images/clients/16.png"
+import sevh from "../images/clients/17.png"
+import et from "../images/clients/18.png"
+import nt from "../images/clients/19.jpg"
+import twt from "../images/clients/20.png"
+import two from "../images/clients/21.png"
+import twotw from "../images/clients/22.png"
+import twotr from "../images/clients/23.jpg"
+import twof from "../images/clients/24.png"
+import twofi from '../images/clients/25.png'
+import twos from '../images/clients/26.jpg'
 
-const clientImages = [f, s, t, fo, fi, si, se, e, n, ten, el, tw];
+const clientImages = [f, s, t, fo, fi, si, se, e, n, ten, el, tw, tt, ft, fit, st, sevh, et, nt, twt, two, twotw, twotr, twof, twofi, twos];
 
 const Clients = () => {
   return (

@@ -93,25 +93,25 @@ const NavBar = () => {
                 Реалізовані проекти
             </HashLink>
             
-            <Link 
-                to="/news" 
+            <HashLink 
+                smooth 
+                to="/#news" 
                 className={mobile ? 
                     "block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-xl text-xl font-medium transition-colors duration-300" : 
                     `transition-colors duration-300 font-medium text-lg ${isScrolled ? 'text-gray-600 hover:text-customGreen' : 'text-white hover:text-customGreen'}`
                 }
             >
                 Новини
-            </Link>
-            <HashLink 
-                smooth 
-                to="/#materials" 
+            </HashLink>
+            <Link 
+                to="/materials" 
                 className={mobile ? 
                     "block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-xl text-xl font-medium transition-colors duration-300" : 
                     `transition-colors duration-300 font-medium text-lg ${isScrolled ? 'text-gray-600 hover:text-customGreen' : 'text-white hover:text-customGreen'}`
                 }
             >
-                Інформаційні матеріали
-            </HashLink>
+                Матеріали
+            </Link>
             
             <HashLink 
                 smooth 
