@@ -28,6 +28,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import ProjectPage from './pages/ProjectPage';
 import MaterialsPage from './pages/MaterialsPage';
 import ServicesPage from './pages/ServicesPage';
+import NotFound from './pages/NotFound';
 
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
@@ -65,6 +66,7 @@ function App() {
         <Route path="/services/archive" element={<ArchiveService />} />
         <Route path="/services/data-entry" element={<DataEntryService />} />
         <Route path="/services/loyalty" element={<LoyaltyService />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

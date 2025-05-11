@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
+import logo from '../../images/logo.svg';
 
 const NavBar = () => {
     const [top, setTop] = useState(!window.scrollY);
@@ -115,7 +116,7 @@ const NavBar = () => {
             
             <HashLink 
                 smooth 
-                to="/#contact" 
+                to="/contact" 
                 className={mobile ? 
                     "block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-xl text-xl font-medium transition-colors duration-300" : 
                     `transition-colors duration-300 font-medium text-lg ${isScrolled ? 'text-gray-600 hover:text-customGreen' : 'text-white hover:text-customGreen'}`
@@ -138,39 +139,15 @@ const NavBar = () => {
                             className="flex items-center space-x-2 group"
                         >
                             <div className="relative">
-                                <div className="absolute inset-0 bg-gradient-to-r from-customGreen to-blue-600 rounded-full blur-lg opacity-30 animate-pulse" />
-                                <svg 
-                                    className="w-14 h-14 transform transition-transform duration-500 group-hover:rotate-[30deg]"
-                                    viewBox="0 0 64 64"
-                                    fill="none"
-                                >
-                                    <path 
-                                        d="M12 12H52V52H12V12Z" 
-                                        stroke="url(#logoGradient)"
-                                        strokeWidth="3"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    />
-                                    <path d="M 7 2 L 7 48 L 43 48 L 43 14.59375 L 42.71875 14.28125 L 30.71875 2.28125 L 30.40625 2 Z M 9 4 L 29 4 L 29 16 L 41 16 L 41 46 L 9 46 Z M 31 5.4375 L 39.5625 14 L 31 14 Z M 15 22 L 15 24 L 35 24 L 35 22 Z M 15 28 L 15 30 L 31 30 L 31 28 Z M 15 34 L 15 36 L 35 36 L 35 34 Z" />
-                                    <circle cx="32" cy="32" r="3" fill="url(#logoGradient)" className="animate-pulse">
-                                        <animate 
-                                            attributeName="r" 
-                                            values="3;5;3" 
-                                            dur="1.5s" 
-                                            repeatCount="indefinite"
-                                        />
-                                    </circle>
-                                    <defs>
-                                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                            <stop offset="0%" stopColor="#2A9D8F" />
-                                            <stop offset="100%" stopColor="#013289" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
+                                <img 
+                                    src={logo} 
+                                    alt="Logo" 
+                                    className={`w-48 h-48 transition-all duration-500 
+                                        ${isScrolled ? 'brightness-0 [filter:brightness(0)_saturate(100%)_invert(48%)_sepia(79%)_saturate(384%)_hue-rotate(118deg)_brightness(95%)_contrast(101%)]' : 'brightness-0 invert'} 
+                                        group-hover:scale-110
+                                        animate-[fadeIn_0.5s_ease-in-out]`} 
+                                />
                             </div>
-                            <span className={`text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-customGreen to-blue-600 bg-[length:200%_200%] animate-gradientFlow ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-                                ScanData
-                            </span>
                         </HashLink>
 
                         {/* Десктопное меню */}
