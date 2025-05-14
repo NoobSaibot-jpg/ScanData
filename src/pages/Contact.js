@@ -126,7 +126,7 @@ const Contact = () => {
                                         </div>
                                         <div>
                                             <p className="text-lg font-medium">Адреса</p>
-                                            <p className="opacity-90">м. Київ, вул. Архівна, 12</p>
+                                            <p className="opacity-90">04112 м.Київ вулиця Дегтярівська буд.62, корпус А</p>
                                         </div>
                                     </div>
 
@@ -138,8 +138,8 @@ const Contact = () => {
                                         </div>
                                         <div>
                                             <p className="text-lg font-medium">Телефони</p>
-                                            <p className="opacity-90">(044) 300 04 08</p>
-                                            <p className="opacity-90">(044) 207 43 32</p>
+                                            <p className="opacity-90">(044)300-04-08</p>
+                                            <p className="opacity-90">(044)207-43-32</p>
                                         </div>
                                     </div>
 

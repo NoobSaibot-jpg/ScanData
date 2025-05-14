@@ -13,7 +13,6 @@ import f from "../../images/clients/1.png";
 import s from "../../images/clients/2.jpg";
 import t from "../../images/clients/3.jpg";
 import fo from "../../images/clients/4.png";
-import fi from "../../images/clients/5.png";
 import si from "../../images/clients/6.png";
 import se from "../../images/clients/7.jpg";
 import e from "../../images/clients/8.png";
@@ -36,7 +35,7 @@ import twof from "../../images/clients/24.png"
 import twofi from '../../images/clients/25.png'
 import twos from '../../images/clients/26.jpg'
 
-const clientImages = [f, s, t, fo, fi, si, se, e, n, ten, el, tw, tt, ft, fit, st, sevh, et, nt, twt, two, twotw, twotr, twof, twofi, twos];
+const clientImages = [f, s, t, fo, si, se, e, n, ten, el, tw, tt, ft, fit, st, sevh, et, nt, twt, two, twotw, twotr, twof, twofi, twos];
 
 const ServicePage = ({ 
     title, 
@@ -144,11 +143,11 @@ const ServicePage = ({
                 {/* Телефон в баннере */}
                 <div className="absolute top-4 right-4 hidden md:block z-[5]">
                     <div className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300">
-                        <a href="tel:+380441234567" className="text-xl font-bold text-customGreen hover:text-customGreen/80 transition-colors flex items-center whitespace-nowrap">
+                        <a href="tel:+380443000408" className="text-xl font-bold text-customGreen hover:text-customGreen/80 transition-colors flex items-center whitespace-nowrap">
                             <svg className="w-6 h-6 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                             </svg>
-                            +380 (44) 123-45-67
+                            (044)300-04-08
                         </a>
                     </div>
                 </div>
@@ -156,7 +155,7 @@ const ServicePage = ({
                 {/* Мобильный телефон */}
                 <div className="absolute top-4 right-4 md:hidden z-[5]">
                     <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300">
-                        <a href="tel:+380441234567" className="text-customGreen hover:text-customGreen/80 transition-colors">
+                        <a href="tel:+380443000408" className="text-customGreen hover:text-customGreen/80 transition-colors">
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                             </svg>

@@ -8,7 +8,7 @@ import f from "../images/clients/1.png";
 import s from "../images/clients/2.jpg";
 import t from "../images/clients/3.jpg";
 import fo from "../images/clients/4.png";
-import fi from "../images/clients/5.png";
+// import fi from "../images/clients/5.png";
 import si from "../images/clients/6.png";
 import se from "../images/clients/7.jpg";
 import e from "../images/clients/8.png";
@@ -31,7 +31,7 @@ import twof from "../images/clients/24.png"
 import twofi from '../images/clients/25.png'
 import twos from '../images/clients/26.jpg'
 
-const clientImages = [f, s, t, fo, fi, si, se, e, n, ten, el, tw, tt, ft, fit, st, sevh, et, nt, twt, two, twotw, twotr, twof, twofi, twos];
+const clientImages = [f, s, t, fo, si, se, e, n, ten, el, tw, tt, ft, fit, st, sevh, et, nt, twt, two, twotw, twotr, twof, twofi, twos];
 
 const Clients = () => {
   return (
